@@ -46,9 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonStringExtensionsTest.AllBetween.cs" />
-    <Compile Include="CommonStringExtensionsTest.AllBetween.g.cs">
-      <DependentUpon>CommonStringExtensionsTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="CommonStringExtensionsTest.Between.cs" />
     <Compile Include="CommonStringExtensionsTest.Contains.cs" />
     <Compile Include="CommonStringExtensionsTest.Convert.cs" />
