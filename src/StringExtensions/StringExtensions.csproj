@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <Description>The String Extensions project aims to provide a more complete String type experience by adding extension methods (including overloads of existing methods) providing commonly required functionality in a well-tested and well-documented fashion.</Description>
     <Authors>Koen Bekkenutte</Authors>
     <Version>1.1.0</Version>
@@ -12,6 +12,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>TRACE;DEBUG;NETSTANDARD1_1</DefineConstants>
     <OutputPath>bin\Debug\netstandard1.1\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD1_0</DefineConstants>
   </PropertyGroup>
 
 </Project>
