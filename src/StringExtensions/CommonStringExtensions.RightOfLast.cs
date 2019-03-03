@@ -69,7 +69,7 @@ namespace StringExtensions
             }
             else
             {
-                result = input.Substring(0, lastValuePosition);
+                result = input.Substring(lastValuePosition + value.Length);
             }
 
             return result;

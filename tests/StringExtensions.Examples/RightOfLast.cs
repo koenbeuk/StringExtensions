@@ -20,5 +20,27 @@ namespace StringExtensions.Examples
 
             Assert.AreEqual("gz", fileName);
         }
+
+        [TestMethod]
+        public void Example2()
+        {
+            // getting the last extension of a fileName
+            string sample = "sample.tar.gz";
+
+            string fileName = sample.RightOfLast(".");
+
+            Assert.AreEqual("gz", fileName);
+        }
+
+        [TestMethod]
+        public void Example3()
+        {
+            // getting the last extension of a fileName
+            string sample = "sample.tar.gz";
+
+            string fileName = sample.RightOfLast("gz");
+
+            Assert.AreEqual("", fileName);
+        }
     }
 }
