@@ -4,7 +4,7 @@
     <TargetFramework>netstandard1.0</TargetFramework>
     <Description>The String Extensions project aims to provide a more complete String type experience by adding extension methods (including overloads of existing methods) providing commonly required functionality in a well-tested and well-documented fashion.</Description>
     <Authors>Koen Bekkenutte</Authors>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
