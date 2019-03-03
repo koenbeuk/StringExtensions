@@ -32,5 +32,25 @@ namespace StringExtensions.Examples
 
             Assert.AreEqual("tar.gz", fileName);
         }
+
+        [TestMethod]
+        public void Example3()
+        {
+            string sample = "sample.tar.gz";
+
+            var extension = sample.RightOf("sample");
+
+            Assert.AreEqual(".tar.gz", extension);
+        }
+
+        [TestMethod]
+        public void Example4()
+        {
+            string sample = "sample.tar.gz";
+
+            var extension = sample.RightOf(".", 1, StringComparison.Ordinal);
+
+            Assert.AreEqual("gz", extension);
+        }
     }
 }

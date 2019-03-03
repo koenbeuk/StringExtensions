@@ -123,12 +123,12 @@ namespace StringExtensions
             }
             else
             {
-                int valuePosition = input.Length;
+                int valuePosition = -1;
                 int valuesFound = -1;
 
                 while (valuesFound < skip)
                 {
-                    valuePosition = input.IndexOf(value, valuePosition, comparisonType);
+                    valuePosition = input.IndexOf(value, valuePosition + 1, comparisonType);
                     if (valuePosition == -1)
                     {
                         break;
@@ -141,11 +141,11 @@ namespace StringExtensions
 
                 if (valuePosition == -1)
                 {
-                    result = input.Substring(valuePosition + 1);
+                    result = input;
                 }
                 else
                 {
-                    result = input;
+                    result = input.Substring(valuePosition + value.Length);
                 }
             }
 
